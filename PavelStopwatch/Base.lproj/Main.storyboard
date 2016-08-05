@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PavelStopwatch" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TIME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rLe-RB-Eep">
+                                <rect key="frame" x="224" y="262" width="151" height="75.5"/>
+                                <color key="backgroundColor" red="0.70275609617103341" green="1" blue="0.44927311071799392" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="rLe-RB-Eep" secondAttribute="height" multiplier="2:1" id="37C-k8-FqQ"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="TU4-In-KUJ"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="75" id="k4q-UV-ItH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="50"/>
+                                <color key="textColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.0079776782270000006" green="0.35660776820000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="shadowOffset" width="0.0" height="-3"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MW0-P2-Fy3">
+                                <rect key="frame" x="250" y="142" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="VY7-3i-dxM"/>
+                                    <constraint firstAttribute="height" constant="100" id="gDO-Hu-Bud"/>
+                                </constraints>
+                                <state key="normal" title="START">
+                                    <color key="titleColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nR2-qk-M1f">
+                                <rect key="frame" x="250" y="357.5" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="AnB-JI-J4l"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="brV-1a-TPe"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="cVB-f2-sL3"/>
+                                    <constraint firstAttribute="width" constant="100" id="wem-3S-oyQ"/>
+                                </constraints>
+                                <state key="normal" title="STOP">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.037066020669999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="nR2-qk-M1f" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2bj-VN-NZh"/>
+                            <constraint firstItem="rLe-RB-Eep" firstAttribute="top" secondItem="MW0-P2-Fy3" secondAttribute="bottom" constant="20" id="EQ4-YV-45O"/>
+                            <constraint firstItem="rLe-RB-Eep" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ER4-PU-QwT"/>
+                            <constraint firstItem="MW0-P2-Fy3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FUe-tQ-Aeg"/>
+                            <constraint firstItem="rLe-RB-Eep" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="MhS-mt-v8J"/>
+                            <constraint firstItem="nR2-qk-M1f" firstAttribute="top" secondItem="rLe-RB-Eep" secondAttribute="bottom" constant="20" id="cda-ka-p3e"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
